@@ -1,0 +1,14 @@
+# flip it and reverse it
+
+# first hash from CTF
+hash1 = "25c6e4734623866785234757a5854666467486073613933326336537a56493e6a585256636239366a57465c636649344d4556464f48403d3"
+# have to reverse it
+reversed1 = hash1[::-1]
+# printing it so I can throw it into CyberChef
+print(reversed1)
+# hash2 is decoded from hex and dropped below
+hash2 = "=0HOFFUMD9FclVGZf92cfRXZn9FZsV3b391cphGdfdXZut2Xvh2d7NlR"
+# reversing hash2 and decoding from base64
+reversed2 = hash2[::-1]
+# printing reversed2 gets the flag
+print(reversed2)
