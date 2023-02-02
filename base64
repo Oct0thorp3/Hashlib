@@ -1,0 +1,14 @@
+import base64
+data = "This is text!"
+
+#base64 encoding
+
+encodedBytes = base64.b64encode(data.encode("utf-8"))
+encodedStr = str(encodedBytes, "utf-8")
+print(encodedStr)
+
+#base64 decoding
+
+decodedBytes = base64.b64decode(encodedStr)
+decodedStr = str(decodedBytes, "utf-8")
+print(decodedStr)
