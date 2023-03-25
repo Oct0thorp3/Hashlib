@@ -1,0 +1,16 @@
+def computepay(h, r):
+    
+    if hrs > 40:
+        xh = hrs - 40
+        xp = rte * 1.5
+        otp = (40 * rte) + (xh * xp)
+        return(otp)
+        
+    else:
+        pay = hrs * rte
+        return(pay)
+
+hrs = float(input("Enter Hours: "))
+rte = float(input("Enter Rate: "))
+
+print("Pay",computepay(hrs,rte))
